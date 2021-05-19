@@ -125,3 +125,15 @@ def list1 = ['Groovy 1.8','Groovy 2.0','Groovy 2.3']
 def list2 = ['Groovy 1.8','Groovy 2.0','Groovy 2.3']        
 println list1 == list2    // using ==, we test object equality                                   
 println list1.is(list2)   // but using is, we can check that references are distinct
+
+//13. Coercion operator
+/* 
+Integer x = 123
+String s = (String) x
+Integer is not assignable to a String, so it will produce a ClassCastException at runtime
+*/
+
+Integer x = 123
+String s = x as String  
+//Integer is not assignable to a String, but use of as will coerce it to a String and it will be new object
+

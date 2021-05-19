@@ -14,5 +14,5 @@ println cat.is(copyCat)  // Groovy identity
 println cat === copyCat  // identical operator shorthand
 println cat !== lion     // negated operator shorthand
 
-// cat and lion are two diff object as they created with new keyword so they are equal beacuse value is same but 
+// cat and lion are two diff object as they created with new keyword so they are equal because value is same but 
 // not identical as there equal and hascode is diff and they are store in diff location in memory
